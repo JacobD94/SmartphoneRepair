@@ -1,0 +1,254 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+}
+.center-cont {
+	width: 80%;
+	margin: 0 auto;
+	min-height: 125px;
+}
+#main-header {
+	background-color: #295FA6;
+}
+#site-title {
+	margin: 0px;
+	padding-top: 40px;
+	color: #fff;
+	float: left;
+}
+#main-nav {
+	float: right;
+	padding-top: 40px;
+}
+#main-nav ul {
+	list-style: none;
+	padding-left: 0;
+}
+#main-nav li {
+	display: inline;
+}
+#main-nav a {
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 10px;
+}
+.current-highlight {
+	color: #0A0B0D;
+}
+#main-nav a:hover {
+	color: #0A0B0D;
+}
+
+/*SHOWCASE SECTION*/
+#showcase {
+	width: 100%;
+	margin: 0px auto;
+	min-height: 400px;
+	background-image: url("../images/smartphone-repair.webp");
+	color: #fff;
+}
+.dark-alpha {
+	background-color: hsla(0, 0%, 0%, .6);
+	width: 100%;
+	margin: 0px auto;
+	min-height: 400px;
+	border-top: 3px solid #0A0B0D;
+	border-bottom: 3px solid #0A0B0D;
+}
+#showcase h1 {
+	padding-top: 120px;
+	text-align: center;
+	margin: 0;
+}
+
+/*NEWSLETTER*/
+#newsletter {
+	margin: 0px auto;
+	min-height: 150px;
+	background-color: #295FA6;
+	border-bottom: 3px solid #0A0B0D;
+}
+#newsletter h1 {
+	margin: 50px 0px;
+	color: #fff;
+	float: left;
+}
+#newsletter form {
+
+	float: right;
+	margin-top: 60px;
+}
+#newsletter input {
+	padding: 5px;
+}
+#newsletter .button-1 {
+	background-color: #0A0B0D;
+	color: #fff;
+	margin-left: 10px;
+	padding: 7px;
+	border: none;
+	border-radius: 5px;
+}
+
+/*home columns section*/
+.col {
+	width: 30%;
+	margin: 20px 10px;
+	float: left;
+}
+.col img {
+	width: 256px;
+	height: 256px;
+	display: block;
+	margin: 0px auto;
+}
+
+
+/*main footer*/
+#main-footer {
+	background-color: #595248;
+	clear: both;
+	border-top: 3px solid #0A0B0D;
+}
+#main-footer p {
+	padding-top: 50px;
+	text-align: center;
+}
+.border-bot {
+	border-bottom: 3px solid #0A0B0D;
+}
+.left-side {
+	width: 65%;
+	float: left;
+	margin: 20px 10px;
+}
+.right-side {
+	width: 30%;
+	float: right;
+	margin: 20px 10px;
+	background-color: #595248;
+
+}
+.dark {
+	background-color: #aaa;
+	padding: 15px;
+}
+/*SERVICES PAGE*/
+#services-cont {
+	width: 65%;
+	float: left;
+	margin: 20px 10px;
+}
+.service {
+	background-color: #ddd;
+	border: 1px solid #aaa;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+#contact {
+	width: 30%;
+	float: right;
+	display: block;
+	margin-top: 20px;
+	background-color: #595248;
+	padding-left: 5px;
+	border: 1px solid #000;
+	color: #FFF;
+}
+#contact h2 {
+	text-align: left;
+}
+#contact label {
+	display: block;
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#contact input, #contact textarea {
+	padding: 5px;
+	width: 90%;
+	margin: 0px auto;
+	
+}
+#contact textarea {
+	height: 100px;
+}
+.button-2 {
+	background-color: #2953A6;
+	display: block;
+	color: #fff;
+	width: 90%;
+	padding: 10px 15px;
+	border-radius: 5px;
+	border:none;
+	margin: 20px 0px 20px 0px;
+}
+
+@media(max-width: 800px) {
+	/*header*/
+	#site-title,
+	#main-nav {
+		float: none;
+		text-align: center;
+	}
+	#main-nav ul {
+		margin: 0px;
+		position: relative;
+		bottom: 15px;
+	}
+	/*NEWSLETTER*/
+	#newsletter h1,
+	#newsletter form {
+		float: none;
+		margin: 0px;
+		text-align: center;
+		padding-top: 30px;
+	}
+	/* HOME COLUMNS */
+	.col {
+		float: none;
+		width: 100%;
+		margin: 40px 0px;
+	}
+	.col h2 {
+		text-align: center;
+	}
+	/*about left and right sides*/
+	.left-side, 
+	.right-side {
+		width: 100%;
+		margin: 20px auto;
+		float: none;
+		box-sizing: border-box;
+	}
+
+	/*SERVICES PAGE*/
+	#services-cont,
+	#contact {
+		margin: 0px auto;
+		width: 100%;
+	}
+	#contact {
+		box-sizing: border-box;
+		margin-bottom: 20px;
+	}
+
+}
+@media(max-width: 375px) {
+	#newsletter h1 {
+		padding-top: 10px;
+	}
+	#newsletter form {
+		padding-top: 10px;
+	}
+}
+
+@media(max-width: 320px) {
+	.button-1 {
+		width: 190px;
+		padding-left: 0px;
+		margin: 5px 0px;
+	}
+}
